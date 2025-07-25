@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Event Regestration</title>
+</head>
+
+<body>
+  <h1>Registration</h1>
+  <form action="/register" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required /> <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required /> <br><br>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required /> <br> <br>
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" id="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="gender" value="other">
+    <label for="other">Other</label> <br><br>
+    <label for="age">Age group</label>
+    <select name="age" id="age">
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-45">36-45</option>
+      <option value="46-55">46-55</option>
+      <option value="56-65">56-65</option>
+    </select>
+    <br><br>
+    <label for="intrest">Topic of Interest</label>
+    <br><br>
+    <input type="checkbox" name="development" id="intrest" value="development">
+    <label for="development">Development</label>
+    <input type="checkbox" name="design" id="interest" value="design">
+    <label for="design">Design</label>
+    <input type="checkbox" name="marketing" id="interest" value="marketing">
+    <label for="marketing">Marketing</label>
+    <br><br>
+    <textarea name="comments" id="comments" placeholder="Additional comments"></textarea>
+    <br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+
+</html>
