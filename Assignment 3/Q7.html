@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Survey Form</title>
+</head>
+
+<body>
+  <h1>Health Survey Form</h1>
+  <form action="/register" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required /> <br><br>
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" required /> <br> <br>
+    <label for="gender">Gender :</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label> <br><br>
+    <label for="height">Height (in cm)</label>
+    <input type="text" id="height" name="height" required /> <br> <br>
+    <label for="weight">Weight (in kg)</label>
+    <input type="text" id="weight" name="weight" required /> <br> <br>
+    
+    <label for="lifestyle-questions">Life Style Questions :</label>
+    <input type="checkbox" name="lifestyle-questions" id="smoker" value="smoker">
+    <label for="smoker">Do you smoke?</label>
+    <input type="checkbox" name="lifestyle-questions" id="drinker" value="drinker">
+    <label for="drinker">Do you drink?</label>
+    <br><br>
+
+    <label for="diet">Dietery Preference</label>
+    <select name="diet" id="diet">
+      <option value="vegetarian">Vegetarian</option>
+      <option value="von-vegetarian">Non-Vegetarian</option>
+      <option value="vegan">Vegan</option>
+    </select>
+    <br><br>
+    <label for="activity">Activity Level</label>
+    <select name="activity" id="activity">
+      <option value="sedentary">Sedentary</option>
+      <option value="moderate">Moderate</option>
+      <option value="active">Active</option>
+    </select>
+    <br><br>
+    <textarea name="concerns" id="concerns" placeholder="optional health concerns"></textarea>
+    <br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+
+</html>
